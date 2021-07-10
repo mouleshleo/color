@@ -1,0 +1,37 @@
+@font-face {
+  font-family: Lato;
+  src: url(Lato-Thin.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: bolder;
+}
+
+p:first-child {
+	margin-top: 15px;
+	text-align: center;
+	font-size: 22px;
+}
+
+p a {
+	color: black;
+}
+
+#color {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 3em;
+	text-align: center;
+	font-weight: bold;
+	margin-top: -20px;
+}
+

@@ -7,9 +7,17 @@ const setBg = () => {
 
 p.innerHTML = "PRESS ENTER TO GENERATE COLOR" + '&#127912;';
 
+if (navigator.userAgent.match(/Mobile/)) {
+	p.innerHTML = 'CLICK TO GENERATE COLOR' + '&#127912;';
+}
+
 document.body.addEventListener("keyup", function (event) {
-	if (event.keyCode === 13) {
+	if (event.keyCode === 13 || event.onclick) {
 		event.preventDefault();
 		setBg();
-	} 
+	};
+});
+
+document.body.addEventListener("click", function () {
+	setBg();
 });
